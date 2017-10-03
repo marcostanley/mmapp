@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="uz.elysee.motormoneyapp" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>MotorMoney</name>
+    <description>
+        The mobile version of the site https://motormoney.org/.
+    </description>
+    <author email="faster19@umail.uz" href="http://phonegap.com">
+        elysee, Inc.
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <engine name="android" spec="~6.2.3" />
+</widget>

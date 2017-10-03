@@ -1,0 +1,14 @@
+{
+    "name": "uz.elysee.motormoneyapp",
+    "version": "1.0.0",
+    "displayName": "MotorMoney",
+    "cordova": {
+        "platforms": [
+            "android"
+        ],
+        "plugins": {}
+    },
+    "dependencies": {
+        "cordova-android": "~6.2.3"
+    }
+}

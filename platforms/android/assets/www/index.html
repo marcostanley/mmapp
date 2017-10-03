@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+		<script type="text/javascript" charset="utf-8" src="js/cordova.js"></script>
+		<script type="text/javascript" charset="utf-8">
+
+		// Wait for Cordova to load
+		//
+		document.addEventListener("deviceready", onDeviceReady, false);
+
+		// Cordova is ready
+		//
+		function onDeviceReady() {
+		var ref = window.open('https://motormoney.org', '_self', 'location=yes');
+		ref.addEventListener('loadstart', function() { alert('start: ' + event.url); });
+		ref.addEventListener('loadstop', function() { alert('stop: ' + event.url); });
+		ref.addEventListener('exit', function() { alert(event.type); });
+		}
+
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>
