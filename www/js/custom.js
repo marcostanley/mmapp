@@ -12,7 +12,7 @@ $(document).ready(function() {
 
 	$('.login').on('click', function(e) {
 
-		url = "https://motormoney.org/user/";
+		url = "https://motormoney.org/forms/login/";
 
 		showHelp(url);
 
