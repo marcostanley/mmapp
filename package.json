@@ -6,9 +6,12 @@
         "platforms": [
             "android"
         ],
-        "plugins": {}
+        "plugins": {
+            "cordova-plugin-inappbrowser": {}
+        }
     },
     "dependencies": {
-        "cordova-android": "~6.2.3"
+        "cordova-android": "~6.2.3",
+        "cordova-plugin-inappbrowser": "^1.7.1"
     }
 }

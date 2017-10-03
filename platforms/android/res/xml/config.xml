@@ -1,5 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="uz.elysee.motormoneyapp" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <feature name="InAppBrowser">
+        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+    </feature>
     <name>MotorMoney</name>
     <description>
         The mobile version of the site https://motormoney.org/.
@@ -7,6 +10,7 @@
     <author email="faster19@umail.uz" href="http://phonegap.com">
         elysee, Inc.
     </author>
+    <icon src="www/favicons.png" />
     <content src="index.html" />
     <access origin="*" />
     <preference name="loglevel" value="DEBUG" />

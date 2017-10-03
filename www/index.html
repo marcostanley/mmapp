@@ -1,28 +1,38 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>MotorMoney App</title>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700" rel="stylesheet"> -->
 
-		<script type="text/javascript" charset="utf-8" src="js/cordova.js"></script>
-		<script type="text/javascript" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/buttons.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
 
-		// Wait for Cordova to load
-		//
-		document.addEventListener("deviceready", onDeviceReady, false);
+	<div class="block bg-1">
 
-		// Cordova is ready
-		//
-		function onDeviceReady() {
-		var ref = window.open('https://motormoney.org', '_self', 'location=yes');
-		ref.addEventListener('loadstart', function() { alert('start: ' + event.url); });
-		ref.addEventListener('loadstop', function() { alert('stop: ' + event.url); });
-		ref.addEventListener('exit', function() { alert(event.type); });
-		}
+		<div id="loaders"></div>
 
-		</script>
-	</head>
-	<body>
+		<!-- <div id="status-message"></div>
+		<div class="loading">
+			<span>Loading</span>
+			<div class="loader"></div>
+		</div> -->
 		
-	</body>
+		<ul>
+			<li><button class="homepage button button--wayra button--border-thick button--text-upper button--size-xs">Homepage</button></li>
+			<li><button class="login button button--wayra button--border-thick button--text-upper button--size-xs">Login</button></li>
+		</ul>
+			
+	</div>
+
+	<script type="text/javascript" charset="utf-8" src="js/jquery.min.js"></script>
+	<!-- <script type="text/javascript" charset="utf-8" src="js/cordova.js"></script> -->
+	<script type="text/javascript" charset="utf-8" src="js/custom.js"></script>
+	
+</body>
 </html>

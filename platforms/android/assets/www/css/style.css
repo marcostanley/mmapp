@@ -1,0 +1,80 @@
+
+* {
+	-webkit-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+	outline: 0;
+}
+
+html, body {
+	font-family: 'Raleway', sans-serif;
+	background: #eee;
+}
+
+.block {
+	width: 280px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+ul {
+	list-style-type: none;
+	display: inline-block;
+	margin: 50px 0 auto;
+	padding: 0;
+}
+
+.loading {
+	text-align: center;
+	margin: 0 auto;
+	display: inline-block;
+}
+.loading span {
+	font-size: 10px;
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+
+/* Alerts */
+
+.info-msg,
+.success-msg,
+.warning-msg,
+.error-msg {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 3px 3px 3px 3px;
+}
+.info-msg {
+  color: #059;
+  background-color: #BEF;
+}
+.success-msg {
+  color: #270;
+  background-color: #DFF2BF;
+}
+.warning-msg {
+  color: #9F6000;
+  background-color: #FEEFB3;
+}
+.error-msg {
+  color: #D8000C;
+  background-color: #FFBABA;
+}
+/**//**//**//**/
+
+/* Loader */
+
+.loader {
+    border: 6px solid #f3f3f3; /* Light grey */
+    border-top: 6px solid grey; /* Blue */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 0.5s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
