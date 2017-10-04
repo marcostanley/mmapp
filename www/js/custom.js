@@ -2,17 +2,38 @@ $(document).ready(function() {
 
 	var url;
 
-	$('.homepage').on('click', function(e) {
+	$('.homepage').click(function(e) {
 
 		url = "https://motormoney.org/";
+		// var ref = window.open('https://motormoney.org/', '_blank', 'location=yes');
+		// ref.addEventListener('loadstart', loadstartCallback);
+		// ref.addEventListener('loadstop', loadstopCallback);
+		// ref.addEventListener('loadloaderror', loaderrorCallback);
+		// ref.addEventListener('exit', exitCallback);
+
+		// function loadstartCallback(event) {
+		//   console.log('Loading started: '  + event.url)
+		// }
+
+		// function loadstopCallback(event) {
+		//   console.log('Loading finished: ' + event.url)
+		// }
+
+		// function loaderrorCallback(error) {
+		//   console.log('Loading error: ' + error.message)
+		// }
+
+		// function exitCallback() {
+		//   console.log('Browser is closed...')
+		// }
 
 		showHelp(url);
 
 	});
 
-	$('.login').on('click', function(e) {
+	$('.login').click(function(e) {
 
-		url = "https://motormoney.org/forms/login/";
+		url = "https://motormoney.org/user/";
 
 		showHelp(url);
 
@@ -24,7 +45,7 @@ $(document).ready(function() {
 
 	    var options = "location=yes,hidden=yes";
 
-	    inAppBrowserRef = window.open(url, target, options);
+	    inAppBrowserRef = cordova.InAppBrowser.open(url, target, options);
 
 	    inAppBrowserRef.addEventListener('loadstart', loadStartCallBack);
 
@@ -81,5 +102,8 @@ $(document).ready(function() {
 	    }
 
 	}
+
+
+		
 
 });
