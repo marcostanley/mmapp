@@ -24,15 +24,23 @@
 		</div> -->
 		
 		<ul>
-			<li><button onclick="window.open('https://motormoney.org/', '_system'); class="homepage button button--wayra button--border-thick button--text-upper button--size-xs">Homepage</button></li>
-			<li><button onclick="window.open('https://motormoney.org/forms/login', '_system'); class="login button button--wayra button--border-thick button--text-upper button--size-xs">Login</button></li>
+			<li><button onclick="hpClick()" class="homepage button button--wayra button--border-thick button--text-upper button--size-xs">Homepage</button></li>
+			<li><button onclick="lClick()" class="login button button--wayra button--border-thick button--text-upper button--size-xs">Login</button></li>
 		</ul>
 			
 	</div>
 
 	<script type="text/javascript" charset="utf-8" src="js/jquery.min.js"></script>
 	<!-- <script type="text/javascript" charset="utf-8" src="js/cordova.js"></script> -->
-	<script type="text/javascript" charset="utf-8" src="js/custom.js"></script>
+<!-- 	<script type="text/javascript" charset="utf-8" src="js/custom.js"></script> -->
+	<script type="text/javascript" charset="utf-8">
+		function hpClick() {
+			window.open('https://motormoney.org/', '_blank', 'location=yes');
+		}
+		function lClick() {
+			window.open('https://motormoney.org/forms/login/', '_blank', 'location=yes');
+		}
+	</script>
 	
 </body>
 </html>
