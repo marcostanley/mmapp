@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 	$('.homepage').click(function(e) {
 
-		var ref = cordova.InAppBrowser.open('https://motormoney.org/', '_blank', 'location=yes');
+		var ref = window.open('https://motormoney.org/', '_blank', 'location=yes');
 		ref.addEventListener('loadstart', loadstartCallback);
 		ref.addEventListener('loadstop', loadstopCallback);
 		ref.addEventListener('loadloaderror', loaderrorCallback);
