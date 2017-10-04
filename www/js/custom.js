@@ -4,30 +4,30 @@ $(document).ready(function() {
 
 	$('.homepage').click(function(e) {
 
-		url = "https://motormoney.org/";
-		// var ref = window.open('https://motormoney.org/', '_blank', 'location=yes');
-		// ref.addEventListener('loadstart', loadstartCallback);
-		// ref.addEventListener('loadstop', loadstopCallback);
-		// ref.addEventListener('loadloaderror', loaderrorCallback);
-		// ref.addEventListener('exit', exitCallback);
+// 		url = "https://motormoney.org/";
+		var ref = window.open('https://motormoney.org/', '_blank', 'location=yes');
+		ref.addEventListener('loadstart', loadstartCallback);
+		ref.addEventListener('loadstop', loadstopCallback);
+		ref.addEventListener('loadloaderror', loaderrorCallback);
+		ref.addEventListener('exit', exitCallback);
 
-		// function loadstartCallback(event) {
-		//   console.log('Loading started: '  + event.url)
-		// }
+		function loadstartCallback(event) {
+		  console.log('Loading started: '  + event.url)
+		}
 
-		// function loadstopCallback(event) {
-		//   console.log('Loading finished: ' + event.url)
-		// }
+		function loadstopCallback(event) {
+		  console.log('Loading finished: ' + event.url)
+		}
 
-		// function loaderrorCallback(error) {
-		//   console.log('Loading error: ' + error.message)
-		// }
+		function loaderrorCallback(error) {
+		  console.log('Loading error: ' + error.message)
+		}
 
-		// function exitCallback() {
-		//   console.log('Browser is closed...')
-		// }
+		function exitCallback() {
+		  console.log('Browser is closed...')
+		}
 
-		showHelp(url);
+// 		showHelp(url);
 
 	});
 
