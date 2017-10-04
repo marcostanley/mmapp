@@ -7,7 +7,7 @@
     <author email="faster19@umail.uz" href="http://phonegap.com">
         elysee, Inc.
     </author>
-    <icon src="www/favicons.png" />
+    <icon src="www/favicon.png" />
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
