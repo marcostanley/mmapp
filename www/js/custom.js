@@ -45,7 +45,7 @@ $(document).ready(function() {
 
 	    var options = "location=yes,hidden=yes";
 
-	    inAppBrowserRef = cordova.InAppBrowser.open(url, target, options);
+	    inAppBrowserRef = window.open(url, target, options);
 
 	    inAppBrowserRef.addEventListener('loadstart', loadStartCallBack);
 
